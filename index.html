@@ -106,53 +106,19 @@ flowplayer.conf = {
 </script>
 </head>
 <body >
-<div align="center"> 
- 
-<br>
+<script type="text/javascript" src="//player.wowza.com/player/latest/wowzaplayer.min.js"></script>
 
-<h3 style="color:#ffffff;font-size:18px;" >20014 Streaming - <font size="3"  style="color:#dddddd">Free Live Streaming Provided by  <a href="http://www.ssh101.com"  style="color:#dddddd" >http://www.ssh101.com</a></font></h3>
+<div id="playerElement" style="width:1280px; height:720px; padding:0;"></div>
 
-<div align="left" style="width:852px;height:480px">
-<div class='videocontent'><div id='fp' class='flowplayer fp-outlined fp-mute'></div>
-</div>
-
-
-<script>
-flowplayer("#fp", {
-    key: '$198551750325855',
-    poster: 'default.png',
-    ratio: 0.5625,
-    live: true,
-    dvr: false,
-    autoplay: true,
-    embed: false,
-    title: 'Live',
-    clip: {
-        sources: [{ type: "application/x-mpegurl", src: "http://kyogoku.flashmediacast.com:1935/kyogoku/livestream/playlist.m3u8"}],
-	 //  sources: [{ type: "application/x-mpegurl", src: "http://ad.mysisli.com/live/20014/index-1554475135-now.m3u8"}],
-        autoplay: true,
-        }
-  });
-</script>
-
-</div>
-<!--- <font size="-1" style="color:#aaaaaa">View up 2 hours recording. Mouseover the player and point scroll bar to watch past.</font> --->
-<br><br>
-
-<!--- <script type="text/javascript">
-var msg = '<font style=font-size:14px;><strong style=color:#ff0000>IE Browser Detected:</strong>. <strong style=color:#00CC00>Google Chrome, Firefox, Safari</strong> browsers are required to watch at PC/Mac.</font><br><br>';
-if (document.all) document.write(msg);
-</script> --->
-
-<
- 
- <br><br>
- <font size="2">&copy; 
- <script language="JavaScript">
- var d=new Date();
- yr=d.getFullYear();
- document.write(yr);
- </script>  SSH101.com All rights reserved.</font> 
- </div>
+<script type="text/javascript">
+WowzaPlayer.create("playerElement",{
+"license":"PLAY1-eBebJ-RkdZy-N66R4-kKJan-UdUwW",
+"title":"",
+"description":"",
+"sourceURL":"http%3A%2F%2Fkyogoku.flashmediacast.com%3A1935%2Fkyogoku%2Flivestream%2Fplaylist.m3u8",
+"autoPlay":false,
+"volume":"75",
+"mute":false,
+"loop":false,"audioOnly":false,"uiShowQuickRewind":true,"uiQuickRewindSeconds":"30"});</script>
  </body>
 </html>
