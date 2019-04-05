@@ -1,28 +1,15 @@
 <!DOCTYPE html>
 <html>
+<head>
+  <base href="https://www.w3schools.com/images/" target="_blank">
+</head>
   <body>
     <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
-    <video id="video" controls></video>
-    <script>
-    if(Hls.isSupported())
-    {
-        var video = document.getElementById('video');
-        var hls = new Hls();
-        hls.loadSource('playlist.m3u8');
-        hls.attachMedia(video);
-        hls.on(Hls.Events.MANIFEST_PARSED,function()
-        {
-            video.play();
-        });
-    }
-    else if (video.canPlayType('application/vnd.apple.mpegurl'))
-    {
-        video.src = 'http://ad.mysisli.com/live/2004/index.m3u8';
-        video.addEventListener('canplay',function()
-        {
-            video.play();
-        });
-    }
-    </script>
+	
+     <video
+        src="http://ad.mysisli.com/live/20004/index.m3u8
+        height="300" width="400"
+    >
+    </video>
   </body>
 </html>
